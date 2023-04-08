@@ -49,7 +49,7 @@ wget -qc https://raw.githubusercontent.com/dpvpn09/sshv/main/ssh-vpn.sh && chmod
 
 wget -qc https://raw.githubusercontent.com/dpvpn09/sshv/main/websock.sh && chmod +x websock.sh && ./websock.sh
 
-
+wget -qc https://raw.githubusercontent.com/dpvpn09/sshv/main/slowdnss/install-sldns.sh && chmod +x install-sldns.sh && ./install-sldns.sh
 
 wget -qc https://raw.githubusercontent.com/dpvpn09/sshv/main/bbr.sh && chmod +x bbr.sh && ./bbr.sh
 
