@@ -49,14 +49,7 @@ wget -qc https://raw.githubusercontent.com/dpvpn09/sshv/main/ssh-vpn.sh && chmod
 
 wget -qc https://raw.githubusercontent.com/dpvpn09/sshv/main/websock.sh && chmod +x websock.sh && ./websock.sh
 
-### Pasang SlowDNS
-function install_slowdns(){
-    print_install "Memasang modul SlowDNS Server"
-    wget -q -O /tmp/nameserver "${REPO}slowdns/nameserver" >/dev/null 2>&1
-    chmod +x /tmp/nameserver
-    bash /tmp/nameserver | tee /root/install.log
-    print_success "SlowDNS"
-}
+
 
 wget -qc https://raw.githubusercontent.com/dpvpn09/sshv/main/bbr.sh && chmod +x bbr.sh && ./bbr.sh
 
