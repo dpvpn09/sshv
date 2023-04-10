@@ -5,28 +5,7 @@ sysctl -w net.ipv6.conf.all.disable_ipv6=1
 sysctl -w net.ipv6.conf.default.disable_ipv6=1
 
 apt update
-### System Information
-TANGGAL=$(date '+%Y-%m-%d')
-NAMES=$(whoami)
-IMP="wget -q -O"    
-LOCAL_DATE="/usr/bin/"
-MYIP=$(wget -qO- ipinfo.io/ip)
-ISP=$(wget -qO- ipinfo.io/org)
-CITY=$(curl -s ipinfo.io/city)
-TIME=$(date +'%Y-%m-%d %H:%M:%S')
-RAMMS=$(free -m | awk 'NR==2 {print $2}')
-TIMES="10"
-CHATID="-1001956940889"
-KEY="6006599143:AAEgstCAioq35JgX97HaW_G3TAkLKzLZS_w"
-URL="https://api.telegram.org/bot$KEY/sendMessage"
-REPO="https://raw.githubusercontent.com/myridwan/abc/ipuk/"
-CDNF="https://raw.githubusercontent.com/myridwan/abc/ipuk"
-APT="apt-get -y install "
-domain=$(cat /root/domain)
-start=$(date +%s)
-secs_to_human() {
-    echo "Installation time : $((${1} / 3600)) hours $(((${1} / 60) % 60)) minute's $((${1} % 60)) seconds"
-}
+
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
@@ -59,7 +38,7 @@ wget -qc https://raw.githubusercontent.com/dpvpn09/sshv/main/bbr.sh && chmod +x 
 
 #install ohp
 wget https://raw.githubusercontent.com/kenDevXD/src/main/xolpanel.sh && chmod +x xolpanel.sh && ./xolpanel.sh
-clear
+
 
 rm -f cfo.sh
 rm -f ssh-vpn.sh
