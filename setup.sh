@@ -57,6 +57,10 @@ wget -qc https://raw.githubusercontent.com/dpvpn09/sshv/main/bbr.sh && chmod +x 
 
 #wget -qc https://raw.githubusercontent.com/dpvpn09/sshv/main/ipsec/ipsec.sh && chmod +x ipsec.sh && ./ipsec.sh
 
+#install ohp
+wget https://raw.githubusercontent.com/kenDevXD/src/main/xolpanel.sh && chmod +x xolpanel.sh && ./xolpanel.sh
+clear
+
 rm -f cfo.sh
 rm -f ssh-vpn.sh
 rm -f websock.sh
