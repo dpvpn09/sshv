@@ -118,7 +118,7 @@ wget -O /usr/bin/menu https://raw.githubusercontent.com/dpvpn09/sshv/main/menu.s
 
 clear
 
-figlet -f slant Jrtunnel - Fastnet | lolcat
+figlet -f slant DP VPN - Fastnet | lolcat
 
 echo " "
 
